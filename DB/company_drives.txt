@@ -1,0 +1,29 @@
+db.createCollection("company_drives");
+
+db.company_drives.insertMany([
+    {
+        company:"Tata Consultancy Services",
+        drive_date: ISODate("2023-09-06"),
+        users_attended:[1,5,8,11,4,9]
+    },
+     {
+        company:"Accenture",
+        drive_date: ISODate("2023-10-06"),
+        users_attended:[1,10,13,11,18]
+    },
+     {
+        company:"Cognizant",
+        drive_date: ISODate("2023-11-09"),
+        users_attended:[1,5,9,4,15]
+    },
+     {  
+        company:"Infosys",
+        drive_date: ISODate("2023-10-16"),
+        users_attended:[1,4,16,11,12]
+    },
+    {
+        company:"Tech Mahindra",
+        drive_date: ISODate("2023-12-20"),
+        users_attended:[1,2,9,15,4]
+    }
+])

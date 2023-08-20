@@ -1,0 +1,23 @@
+db.createCollection("codekata");
+
+db.codekata.insertMany([
+    {user_id:1,codekata_solved:300,webkata_solved:100},
+    {user_id:2,codekata_solved:301,webkata_solved:100},
+    {user_id:3,codekata_solved:288,webkata_solved:100},
+    {user_id:4,codekata_solved:278,webkata_solved:100},
+    {user_id:5,codekata_solved:303,webkata_solved:100},
+    {user_id:6,codekata_solved:309,webkata_solved:100},
+    {user_id:7,codekata_solved:289,webkata_solved:100},
+    {user_id:8,codekata_solved:378,webkata_solved:100},
+    {user_id:9,codekata_solved:301,webkata_solved:100},
+    {user_id:10,codekata_solved:167,webkata_solved:100},
+    {user_id:11,codekata_solved:245,webkata_solved:100},
+    {user_id:12,codekata_solved:290,webkata_solved:100},
+    {user_id:13,codekata_solved:311,webkata_solved:100},
+    {user_id:14,codekata_solved:167,webkata_solved:100},
+    {user_id:15,codekata_solved:310,webkata_solved:100},
+    {user_id:16,codekata_solved:160,webkata_solved:100},
+    {user_id:17,codekata_solved:90,webkata_solved:100}
+
+
+])

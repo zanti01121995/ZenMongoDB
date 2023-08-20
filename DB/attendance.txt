@@ -1,0 +1,254 @@
+
+	db.createCollection("attendance");
+
+
+db.attendance.insertMany([{
+  "userid":1,
+  "Class_date":ISODate("2023-10-07"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-10-08"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-10-14"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-10-15"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-10-21"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-10-22"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-10-28"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-10-29"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-11-05"),
+  "attendance":true
+},  
+{
+  "userid":1,
+  "Class_date":ISODate("2023-11-06"),
+  "attendance":true
+}, 
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-07"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-08"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-14"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-15"),
+  "attendance":false
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-21"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-22"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-28"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-10-29"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-11-05"),
+  "attendance":true
+},  
+{
+  "userid":2,
+  "Class_date":ISODate("2023-11-06"),
+  "attendance":false
+},
+{
+  "userid":3,
+  "Class_date":ISODate("3023-10-07"),
+  "attendance":true
+},{
+  "userid":3,
+  "Class_date":ISODate("2023-10-08"),
+  "attendance":true
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-10-14"),
+  "attendance":true
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-10-15"),
+  "attendance":false
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-10-21"),
+  "attendance":true
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-10-22"),
+  "attendance":true
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-10-28"),
+  "attendance":true
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-10-29"),
+  "attendance":true
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-11-05"),
+  "attendance":true
+},  
+{
+  "userid":3,
+  "Class_date":ISODate("2023-11-06"),
+  "attendance":false
+},
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-07"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-08"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-14"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-15"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-21"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-22"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-28"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-10-29"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-11-05"),
+  "attendance":true
+},  
+{
+  "userid":4,
+  "Class_date":ISODate("2023-11-06"),
+  "attendance":true
+}, 
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-07"),
+  "attendance":true
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-08"),
+  "attendance":true
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-14"),
+  "attendance":true
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-15"),
+  "attendance":true
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-21"),
+  "attendance":false
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-22"),
+  "attendance":true
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-28"),
+  "attendance":false
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-10-29"),
+  "attendance":true
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-11-05"),
+  "attendance":false
+},  
+{
+  "userid":5,
+  "Class_date":ISODate("2023-11-06"),
+  "attendance":false
+},   
+]  );

@@ -1,0 +1,148 @@
+	db.createCollection("topics");
+
+db.topics.insertMany([
+  {
+    "topic_id": 1,
+    "task_id": 1,
+    "description": [
+      "Introduction to web",
+      "Browser Wars",
+      "DOM tree",
+      "CSSOM tree Browser internals - HTML parser",
+      "CSS parser",
+      "JS engine Layout engine or rendering engine JavaScript",
+      "V8 engine internals",
+      "IP  MAC address  Ports & Evolution of HTTP"
+    ],
+     "start_date":ISODate("2023-01-11"),
+    "end_date":ISODate("2023-02-10")
+  },
+  {
+    "topic_id": 2,
+    "task_id": 2,
+    "description": [
+      "How the Server looks at the URL",
+      "Request & Response cycle",
+      "HTML Browser view - Debugger, Inspect, Responsive View",
+      "Browser js vs Node js",
+      "Data types",
+      "Copy by value and Copy by reference",
+      "Window & document object",
+      "Array and JSON iteration",
+      "XMLHTTPRequest",
+      "Hoisting & scope",
+      "function & return keyword"
+    ],
+    "start_date":ISODate("2023-02-18"),
+    "end_date":ISODate("2023-03-15")
+  },
+  {
+    "topic_id": 3,
+    "task_id": 3,
+    "description": [
+      "types of function",
+      "MRF - array method",
+      "error handling",
+      "ES5 vs ES6",
+      "OOP"
+    ],
+     "start_date":ISODate("2023-03-21"),
+    "end_date":ISODate("2023-04-10")
+  },
+  {
+    "topic_id": 4,
+    "task_id": 4,
+    "description": [
+      "What is HTML?",
+      "Basic tags in HTML?",
+      "Inline vs block element",
+      "div vs section vs article",
+      "HTML forms & Form input element with its attributes and HTML form submit"
+    ],
+    "start_date":ISODate("2023-04-17"),
+    "end_date":ISODate("2023-05-11")
+  },
+  {
+    "topic_id": 5,
+    "task_id": 5,
+    "description": [
+      "What is CSS?",
+      "property vs value",
+      "Selector:- tag vs class vs id",
+      "Intro to pseudo-classes (link,visited,hover,active)",
+      "parent inherit",
+      "Box model - margin, padding, border"
+    ],
+    "start_date":ISODate("2023-05-17"),
+    "end_date":ISODate("2023-06-10")
+  },
+  {
+    "topic_id": 6,
+    "task_id": 6,
+    "description": [
+      "Position property - static, relative, absolute, fixed, sticky",
+      "overflow property - hidden, visible, scroll, auto",
+      "box-shadow property",
+      "Media query",
+      "Use of Font & icons"
+    ],
+     "start_date":ISODate("2023-06-11"),
+    "end_date":ISODate("2023-07-03")
+  },
+  {
+    "topic_id": 7,
+    "task_id": 7,
+    "description": [
+      "What is Bootstrap?",
+      "Layout, Container, grid system, gutters",
+      "Responsive web design"
+    ],
+     "start_date":ISODate("2023-07-10"),
+    "end_date":ISODate("2023-08-13")
+  },
+  {
+    "topic_id": 8,
+    "task_id": 8,
+    "description": [
+      "ReactJS introduction",
+      "Components, states, props, lifecycle",
+      "Conditionals, hooks, router, Axios",
+      "Redux"
+    ],
+    "start_date":ISODate("2023-08-14"),
+    "end_date":ISODate("2023-09-15")
+  },
+  {
+    "topic_id": 9,
+    "task_id": 9,
+    "description": [
+      "MySQL & MongoDB",
+      "NodeJS - Connecting DB with MongoDB",
+      "Routes, Authentication - Middleware - JWT",
+      "Custom middleware",
+      "The student should do a complete backend application"
+    ],
+    "start_date":ISODate("2023-09-16"),
+    "end_date":ISODate("2023-10-10")
+  },
+  {
+    "topic_id": 10,
+    "task_id": 10,
+    "description": ["Data Structure & Algorithms"],
+    "start_date":ISODate("2023-10-11"),
+    "end_date":ISODate("2023-10-28")
+  },
+  {
+    "topic_id": 11,
+    "task_id": 11,
+    "description": ["System Design", "AWS"],
+     "start_date":ISODate("2023-11-13"),
+    "end_date":ISODate("2023-11-28")
+  },
+  {
+    "topic_id": 12,
+    "task_id": 12,
+    "description": ["Placement preparation & capstone project development"],
+     "start_date":ISODate("2023-11-29"),
+  }
+]);

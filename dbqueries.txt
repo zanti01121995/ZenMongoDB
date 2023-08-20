@@ -1,0 +1,48 @@
+////////////Find all the topics and tasks which are thought in the month of October///////////
+
+db.topics.aggregate([{$lookup:{from: "tasks",localField:"task_id",foreignField: "task_id",as: "task"}},{$match:{$and:[{start_date:{$gte:ISODate('2023-10-01'),$lte:ISODate('2023-10-31')}},{"task.deadline_date":{$gte:ISODate('2023-10-01'),$lte:ISODate('2023-10-31')}}]}},{$project:{task_id:0,topic_id:0,start_date:0,end_date:0,_id:0}},{$project:{
+ "task":{task_id:0,_id:0,deadline_date:0}
+}}]).forEach(ele=>{console.log("topic's for october : "+ele.description[0],"task for october :"+ele.task[0].task_details)})
+
+/////////////Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020////////
+
+db.company_drives.find({drive_date:{$gte:ISODate('2023-10-01'),$lte:ISODate('2023-10-31')}},{_id:0,drive_date:0,users_attended:0})
+
+
+////////////Find all the company drives and students who are appeared for the placement///////////
+
+db.company_drives.aggregate([{$lookup:{
+  from:"users",
+  localField:"users_attended",
+  foreignField:"id",
+  as: "users_names"
+}}]).forEach(ele=>{let a =ele.users_names; console.log("Company name:"+ele.company);a.forEach((e,i)=>{console.log([i+1] +":"+e.student_name)})})
+
+////////////Find the number of problems solved by the user in codekata//////////////
+
+db.users.aggregate([{$lookup:{
+  from: "codekata",
+  localField: "id",
+  foreignField:"user_id",
+  as: "solved"
+}}]).forEach(ele=>{console.log(ele.student_name +" "+"solved"+" "+ele.solved[0].
+codekata_solved+" "+"codekata problems")});
+
+///////////Find all the mentors with who has the mentee's count more than 15//////////
+
+db.mentors.aggregate([
+  				{$match:{
+ 					mentees:{$gt:15}
+				}},{$project:{
+					_id:0
+				}}
+				]);
+
+//////////Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020/////////////
+
+db.users.aggregate([{$lookup:{
+  from: "attendance",
+  localField:"id",
+  foreignField: "userid",
+  as:"attendance"
+}},{$match:{$or: [{"attendance.attendance": false,"attendance.Class_date":{$gte:ISODate('2023-10-15'),$lte:ISODate('2023-10-31')}},{"task_completion": false,},],}}])

@@ -1,0 +1,88 @@
+	db.createCollection("tasks");
+
+db.tasks.insertMany([
+  {
+    "task_id": 1,
+    "task_details": "Write the detailed notes about the Web operation on the browser",
+    "deadline_date":ISODate("2023-02-17"),
+    "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 2,
+    "task_details": "Create a request and fetch the data from the server using any Public API's",
+     "deadline_date":ISODate("2023-03-16"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 3,
+    "task_details": "Solve the Problem with the help of functions and array methods",
+     "deadline_date":ISODate("2023-04-13"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 4,
+    "task_details": "Crete a basic form HTML page with elements",
+     "deadline_date":ISODate("2023-05-17"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 5,
+    "task_details": "Design a basic form by using the Css properties like Pseudo classes,box model etc...",
+     "deadline_date":ISODate("2023-06-11"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 6,
+    "task_details": "Design a responsive page by using the medis queries and positioning properties on css",
+     "deadline_date":ISODate("2023-07-11"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 7,
+    "task_details": "Design a responsive page by using the bootstrap",
+     "deadline_date":ISODate("2023-08-14"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 8,
+    "task_details": "Design a shopping cart page using the react.js",
+     "deadline_date":ISODate("2023-09-16"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 9,
+    "task_details": "Design a database for the Zen portal using mongoDB",
+     "deadline_date":ISODate("2023-10-11"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 10,
+    "task_details": "solve the leetcode problems using the Data structure and Algorithm",
+     "deadline_date":ISODate("2023-10-30"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 11,
+    "task_details": "Design an application and database by using the AWS",
+     "deadline_date":ISODate("2023-11-29"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  },
+  {
+    "task_id": 12,
+    "task_details": "Finish all the Pre-placement tasks",
+     "deadline_date":ISODate("2024-05-17"),
+      "pending_users": [2,4,6,8,10,12,14,16],
+    "completed_users": [1,3,5,7,9,11,13,14,15,17]
+  }
+]);

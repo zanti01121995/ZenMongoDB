@@ -1,0 +1,141 @@
+
+	db.createCollection("users");
+
+db.users.insertMany([
+  {
+    "id": 1,
+    "student_name": "Santhosh.S",
+    "batch_id": "WEBE44",
+    "mail_id": "santhosh@gmail.com",
+    "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 2,
+    "student_name": "Siva.S",
+    "batch_id": "WEBE44",
+    "mail_id": "siva@gmail.com",
+    "task_completion":false,
+    "pending_tasks_id":[6,9]
+  },
+  {
+    "id": 3,
+    "student_name": "Selva.S",
+    "batch_id": "WEBE44",
+    "mail_id": "selva@gmail.com",
+    "task_completion":false,
+    "pending_tasks_id":[6]
+  },
+  {
+    "id": 4,
+    "student_name": "Ram.K",
+    "batch_id": "WEBE44",
+    "mail_id": "ram@gmail.com",
+    "task_completion":false,
+    "pending_tasks_id":[12]
+  },
+  {
+    "id": 5,
+    "student_name": "Somu.L",
+    "batch_id": "WEBE44",
+    "mail_id": "somu@gmail.com",
+    "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 6,
+    "student_name": "Prasanth.K",
+    "batch_id": "WEBE44",
+    "mail_id": "prasant@.com",
+    "task_completion":false,
+    "pending_tasks_id":[9]
+  },
+  {
+    "id": 7,
+    "student_name": "Subash.C",
+    "batch_id": "WEBE44",
+    "mail_id": "subash@gmail.com",
+    "task_completion":false,
+    "pending_tasks_id":[6,9]
+  },
+  {
+    "id": 8,
+    "student_name": "Ajay.C",
+    "batch_id": "WEBE44",
+    "mail_id": "ajay@gmail.com",
+    "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 9,
+    "student_name": "Sekar.S",
+    "batch_id": "WEBE44",
+    "mail_id": "sekar@gmail.com",
+     "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 10,
+    "student_name": "Varun.T",
+    "batch_id": "WEBE44",
+    "mail_id": "varun@gmail.com", 
+    "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 11,
+    "student_name": "Tharun.S",
+    "batch_id": "WEBE44",
+    "mail_id": "tharun@gmail.com",
+     "task_completion":false,
+    "pending_tasks_id":[11,7]
+  },
+  {
+    "id": 12,
+    "student_name": "Vijay.K",
+    "batch_id": "WEBE44",
+    "mail_id": "vijay@gmail.com",
+     "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 13,
+    "student_name": "Ramesh.R",
+    "batch_id": "WEBE44",
+    "mail_id": "ramesh@gmail.com",
+     "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 14,
+    "student_name": "Muthu.S",
+    "batch_id": "WEBE44",
+    "mail_id": "muthu@gmail.com",
+     "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 15,
+    "student_name": "Naresh.H",
+    "batch_id": "WEBE44",
+    "mail_id": "naresh@gmail.com",
+     "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 16,
+    "student_name": "Ramki.P",
+    "batch_id": "WEBE44",
+    "mail_id": "ramki@gmail.com",
+     "task_completion":true,
+    "pending_tasks_id":[]
+  },
+  {
+    "id": 17,
+    "student_name": "Yuvan.I",
+    "batch_id": "WEBE44",
+    "mail_id": "yuvan@gmail.com",
+    "task_completion":false,
+    "pending_tasks_id":[4]
+  }
+]);
